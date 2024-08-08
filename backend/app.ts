@@ -25,6 +25,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 
+app.use("/", (req,res)=>res.status(200).json({message: "hello from server"}))
 //Admin Route
 app.use("/api/admin", AdminRoute)
 
