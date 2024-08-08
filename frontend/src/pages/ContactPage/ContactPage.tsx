@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
 import LoginPage from "../LoginPage/LoginPage";
 import { toast } from "react-toastify";
+import { API } from "../../../Constants";
 
 
 type ContactDetails = {
@@ -20,7 +21,7 @@ const ContactPage = () => {
   const [contactDetails, setContactDetails] = useState<ContactDetails>(defaultFormState);
 
   const {user} = useAuth();
-  const API = import.meta.env.VITE_APP_URI_API;
+  
 
    
 

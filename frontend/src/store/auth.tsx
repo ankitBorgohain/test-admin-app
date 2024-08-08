@@ -31,11 +31,11 @@ interface AuthProviderProps {
     children: ReactNode;
 }
 
-const API = import.meta.env.VITE_APP_URI_API;
+import { API } from "../../../Constants";
+
 const URL = `${API}/api/auth/user`;
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({children})=>{
-        const adminMail = import.meta.env.VITE_ADMIN_MAIL;
 
         const [token, setToken]= useState(localStorage.getItem('token'));
         const [user, setUser] = useState("");

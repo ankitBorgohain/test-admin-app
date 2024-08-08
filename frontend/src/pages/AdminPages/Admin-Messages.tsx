@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
+import { API } from "../../../Constants";
+
+
 
 const AdminMessages = () => {
-  const API = import.meta.env.VITE_APP_URI_API;
   const { AuthorizationToken } = useAuth();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false)

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
+import { API } from "../../../Constants";
 
 import { useAuth } from "../../store/auth";
 
@@ -15,7 +16,6 @@ const SignPage: React.FC = () => {
  // let name = e.target.name;
     // let value = e.target.value;
  
-    const API = import.meta.env.VITE_APP_URI_API;
   const navigate = useNavigate();
   const {storeTokenInLS} = useAuth();
 

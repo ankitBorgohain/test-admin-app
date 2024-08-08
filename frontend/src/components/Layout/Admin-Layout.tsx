@@ -2,6 +2,8 @@ import React from "react";
 import { Navigate, NavLink, Outlet} from "react-router-dom";
 
 import { useAuth } from "../../store/auth";
+        const adminMail = import.meta.env.VITE_ADMIN_MAIL;
+import { ADMIN } from "../../../Constants";
 
 const AdminLayout = () => {
  
@@ -10,7 +12,7 @@ const AdminLayout = () => {
   if(isLoading)
     return <h1>Loading...</h1>
 
-  let isAdmin = user.email == import.meta.env.VITE_ADMIN_MAIL;
+  let isAdmin = user.email == ADMIN
  
   
 

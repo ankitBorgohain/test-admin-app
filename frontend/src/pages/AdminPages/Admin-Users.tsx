@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
 import { Link } from "react-router-dom";
 
+import { API } from "../../../Constants";
+
+
 
 interface IUser extends Document {
     _id: string;
@@ -15,7 +18,6 @@ const AdminUsers = () => {
 
   const [users, setUsers] = useState<IUser[]>([]);
   const [isLoading, setIsLoading] = useState(false)
-  const API = import.meta.env.VITE_APP_URI_API;
   
 
     // //delete user method
