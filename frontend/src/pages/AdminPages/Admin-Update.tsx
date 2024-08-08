@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom"
 import { useAuth } from "../../store/auth";
 import { toast } from "react-toastify";
+import {API} from "../../../Constants";
 
 
 const AdminUpdate = ()=>{
@@ -16,7 +17,7 @@ const AdminUpdate = ()=>{
       const [ isLoading, setIsLoading]= useState(false);
       const params = useParams();
       const {AuthorizationToken} = useAuth();
-      const API = import.meta.env.VITE_APP_URI_API;
+      
       
       
 
