@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
-import { API } from "../../../Constants";
+import { API } from "../../Constants";
 
 const AdminServices = () => {
   

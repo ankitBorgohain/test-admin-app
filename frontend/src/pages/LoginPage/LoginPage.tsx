@@ -3,7 +3,7 @@ import "./Login.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../store/auth";
 import { toast } from 'react-toastify';
-import { API } from "../../../Constants";
+import { API } from "../../Constants";
 
 const LoginPage: React.FC = () => {
   

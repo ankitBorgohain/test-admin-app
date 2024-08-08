@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
-import { API } from "../../../Constants";
+import { API } from "../../Constants";
 
 import { useAuth } from "../../store/auth";
 

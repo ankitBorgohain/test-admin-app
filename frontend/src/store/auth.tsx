@@ -31,7 +31,7 @@ interface AuthProviderProps {
     children: ReactNode;
 }
 
-import { API } from "../../../Constants";
+import { API } from "../Constants";
 
 const URL = `${API}/api/auth/user`;
 

@@ -2,8 +2,7 @@ import React from "react";
 import { Navigate, NavLink, Outlet} from "react-router-dom";
 
 import { useAuth } from "../../store/auth";
-        const adminMail = import.meta.env.VITE_ADMIN_MAIL;
-import { ADMIN } from "../../../Constants";
+import { ADMIN } from "../../Constants";
 
 const AdminLayout = () => {
  

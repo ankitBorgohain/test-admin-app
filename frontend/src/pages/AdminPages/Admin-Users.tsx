@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
 import { Link } from "react-router-dom";
 
-import { API } from "../../../Constants";
+import { API } from "../../Constants";
 
 
 

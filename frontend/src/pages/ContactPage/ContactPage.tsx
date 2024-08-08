@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../../store/auth";
 import LoginPage from "../LoginPage/LoginPage";
 import { toast } from "react-toastify";
-import { API } from "../../../Constants";
+import { API } from "../../Constants";
 
 
 type ContactDetails = {
