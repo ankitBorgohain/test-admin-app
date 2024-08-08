@@ -11,15 +11,15 @@ interface IService {
 }
 
 interface AuthContextType {
-    isLoggedIn: boolean;
-    setIsLoggedIn: (value: boolean) => void;
-    logoutUser : () => void
-    storeTokenInLS: (serverToken: string) => void;
-    user: string;
-    services: IService[];
-    AuthorizationToken: string;
+    isLoggedIn ?: boolean;
+    setIsLoggedIn ?: (value: boolean) => void;
+    logoutUser ?: () => void
+    storeTokenInLS ?: (serverToken: string) => void;
+    user ?: string;
+    services ?: IService[];
+    AuthorizationToke ?: string;
     // isAdmin: boolean;
-    isLoading: boolean;
+    isLoading ?: boolean;
     
 }
 
